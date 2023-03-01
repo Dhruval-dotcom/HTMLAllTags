@@ -1,0 +1,136 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#card {
+    display: flex;
+
+}
+
+#card2 {
+    width: 12%;
+    background-color: lightskyblue;
+    height: 900px;
+    display: block;
+    overflow-x: scroll;
+}
+
+#tag {
+    width: 92%;
+    height: 31px;
+}
+
+#search-button {
+    width: 15%;
+}
+
+#fa-search {
+    font-size: 20px;
+}
+
+#search {
+    margin-top: 12px;
+    display: flex;
+    background-color: white;
+}
+
+.linktag {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    padding-left: 20px;
+    width: 100%;
+    padding: 8px;
+    word-break: break-all;
+    padding-left: 22px;
+}
+#heading h1{
+    color: lightskyblue;
+    margin-bottom: 15px;
+}
+.active {
+    text-transform: capitalize;
+    background-color: rgb(61, 135, 182);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 19px;
+    padding-left: 20px;
+    width: 100%;
+    padding: 8px;
+    word-break: break-all;
+    padding-left: 22px;
+}
+
+.linktag a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.linktag:hover {
+    background-color: rgba(61, 136, 182, 0.329);
+    text-decoration: none;
+}
+
+
+#code {
+    margin: 20px 10px;
+    border: 1px solid black;
+    border-left: 3px solid lightskyblue;
+    word-break: break-all;
+    padding: 5px 10px;
+}
+
+#frame {
+    margin: 20px 20px;
+    width: 1000px;
+    height: 800px;
+}
+
+@media screen and (max-width:1200px) {
+    #card2 {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:734px) {
+    #card {
+        display: block;
+    }
+
+    #card2 {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        overflow-x: scroll;
+    }
+
+    #tag {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 200px;
+    }
+
+    .linktag {
+        width: 2000px;
+        word-break: keep-all;
+    }
+
+    .active {
+        word-break: keep-all;
+    }
+
+    #search {
+        margin-top: 2px;
+    }
+
+    #search-button {
+        height: 31px;
+    }
+}

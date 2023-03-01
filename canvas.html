@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="heading"><h1>Canvas tag</h1></div>
+    canvas tag in html5 <br>
+    The canvas tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+    <div id="code">
+        &lt;canvas id="myCanvas"&gt; <br>
+            Your browser does not support the canvas tag. <br>
+        &lt;/canvas&gt; <br>
+
+        &lt;script&gt; <br>
+            var canvas = document.getElementById("myCanvas"); <br>
+            var ctx = canvas.getContext("2d"); <br>
+            ctx.fillStyle = "#FF0000"; <br>
+            ctx.fillRect(0, 0, 80, 80); <br>
+        &lt;/script&gt;
+    </div>
+</body>
+
+</html>

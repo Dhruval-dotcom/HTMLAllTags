@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML All tags</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/Cool Text - DHR 430571942090156.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="search.js"></script>
+</head>
+
+<body>
+    <div id="card">
+        <div id="card2">
+            <div style="display: flex;margin: 4px;">
+                <img style="height: 23px;" src="images/Cool Text - DHR 430571942090156.png" alt="">
+                <img style="height: 23px;" src="images/2.png" alt="">
+            </div>
+            <div id="search">
+                <input list="tags" name="tagall" id="tag">
+                <datalist id="tags">
+                    <option value="home">
+                    <option value="format">
+                    <option value="declaration">
+                    <option value="heading">
+                    <option value="tags">
+                    <option value="formatting">
+                    <option value="color">
+                    <option value="anchor">
+                    <option value="embed">
+                    <option value="base">
+                    <option value="button">
+                    <option value="canvas">
+                    <option value="center">
+                    <option value="colgroup">
+                    <option value="datalist">
+                    <option value="detail">
+                    <option value="dl">
+                    <option value="feildset">
+                    <option value="form">
+                    <option value="frame">
+                    <option value="img">
+                    <option value="input">
+                    <option value="inputtypes">
+                    <option value="label">
+                    <option value="list">
+                    <option value="link">
+                    <option value="meta">
+                    <option value="select">
+                    <option value="param">
+                    <option value="progress">
+                    <option value="script">
+                    <option value="section">
+                    <option value="span">
+                    <option value="style">
+                    <option value="table">
+                    <option value="textarea">
+                    <option value="svg">
+                </datalist>
+                <button id="search-button" onclick="fun2()"><i class="fa fa-search"></i></button>
+            </div>
+
+            <div onclick="fun('home',0)" id="0" class="linktag">Home</div>
+            <div onclick="fun('format',1)" id="1" class="linktag">Format</div>
+            <div onclick="fun('declaration',2)" id="2" class="linktag">Declaration</div>
+            <div onclick="fun('heading',3)" id="3" class="linktag">Headings</div>
+            <div onclick="fun('tags',4)" id="4" class="linktag">Basic tags</div>
+            <div onclick="fun('formatting',5)" id="5" class="linktag">Formatting tags</div> 
+            <div onclick="fun('color',6)" id="6" class="linktag">HTML colors</div>
+            <div onclick="fun('anchor',7)" id="7" class="linktag">anchor tag</div>
+            <div onclick="fun('embed',8)" id="8" class="linktag">embed tag</div>
+            <div onclick="fun('base',9)" id="9" class="linktag">base tag</div>
+            <div onclick="fun('button',10)" id="10" class="linktag">button tag</div>
+            <div onclick="fun('canvas',11)" id="11" class="linktag">canvas tag</div>
+            <div onclick="fun('center',12)" id="12" class="linktag">center tag</div>
+            <div onclick="fun('colgroup',13)" id="13" class="linktag">colgroup tag</div>
+            <div onclick="fun('datalist',14)" id="14" class="linktag">datalist tag</div>
+            <div onclick="fun('detail',15)" id="15" class="linktag">detail tag</div>
+            <div onclick="fun('dl',16)" id="16" class="linktag">dl tag</div>
+            <div onclick="fun('feildset',17)" id="17" class="linktag">fieldset tag</div>
+            <div onclick="fun('form',18)" id="18" class="linktag">form tag</div>
+            <div onclick="fun('frame',19)" id="19" class="linktag">frame tag</div>
+            <div onclick="fun('img',20)" id="20" class="linktag">img tag</div>
+            <div onclick="fun('input',21)" id="21" class="linktag">input tag</div>
+            <div onclick="fun('inputtypes',22)" id="22" class="linktag">input types</div> 
+            <div onclick="fun('label',23)" id="23" class="linktag">label tag</div>
+            <div onclick="fun('list',24)" id="24" class="linktag">list tag</div>
+            <div onclick="fun('link',25)" id="25" class="linktag">link tag</div>
+            <div onclick="fun('meta',26)" id="26" class="linktag">meta tag</div>
+            <div onclick="fun('select',27)" id="27" class="linktag">Select tag</div>
+            <div onclick="fun('param',28)" id="28" class="linktag">Param tag</div>
+            <div onclick="fun('progress',29)" id="29" class="linktag">Progress tag</div>
+            <div onclick="fun('script',30)" id="30" class="linktag">script tag</div>
+            <div onclick="fun('section',31)" id="31" class="linktag">Section tag</div>
+            <div onclick="fun('span',32)" id="32" class="linktag">span tag</div>
+            <div onclick="fun('style',33)" id="33" class="linktag">style tag</div>
+            <div onclick="fun('table',34)" id="34" class="linktag">table tag</div>
+            <div onclick="fun('textarea',35)" id="35" class="linktag">textarea tag</div>
+            <div onclick="fun('svg',36)" id="36" class="linktag">svg tag</div>  
+            
+
+        </div>
+        <div id="card3">
+            <iframe id="frame" src="format.html" height="1000px" frameborder="0"></iframe>
+        </div>
+
+    </div>
+    <script>
+        //formatting color anchor embed base button canvas center colgroup
+        //datalist detail dl feildset form frame img input inputtypes label list link meta select param progress script
+        //section span style table textarea svg
+        var prev=0;
+        function fun(st, ind) {
+            document.getElementById(prev.toString()).style.backgroundColor="lightskyblue"
+            prev=ind;
+            document.getElementById(ind.toString()).style.backgroundColor="rgb(61, 135, 182)";
+            document.getElementById("frame").src = st + ".html"; 
+        }
+        function fun3(x){
+            if(x=='home')return 0;
+            if(x=='format')return 1
+            if(x=='declaration')return 2
+            if(x=='heading')return 3
+            if(x=='tags')return 4
+            if(x=='formatting')return 5
+            if(x=='color')return 6
+            if(x=='anchor')return 7
+            if(x=='embed')return 8
+            if(x=='base')return 9
+            if(x=='button')return 10
+            if(x=='canvas')return 11
+            if(x=='center')return 12
+            if(x=='colgroup')return 13
+            if(x=='datalist')return 14
+            if(x=='detail')return 15
+            if(x=='dl')return 16
+            if(x=='feildset')return 17
+            if(x=='form')return 18
+            if(x=='frame')return 19
+            if(x=='img')return 20
+            if(x=='input')return 21
+            if(x=='inputtypes')return 22
+            if(x=='label')return 23
+            if(x=='list')return 24
+            if(x=='link')return 25
+            if(x=='meta')return 26
+            if(x=='select')return 27
+            if(x=='param')return 28
+            if(x=='progress')return 29
+            if(x=='script')return 30
+            if(x=='section')return 31
+            if(x=='span')return 32
+            if(x=='style')return 33
+            if(x=='table')return 34
+            if(x=='textarea')return 35
+            if(x=='svg')return 36
+        }
+        function fun2(){
+            x=document.getElementById('tag').value;
+            document.getElementById(prev.toString()).style.backgroundColor="lightskyblue"
+            document.getElementById(fun3(x).toString()).style.backgroundColor="rgb(61, 135, 182)"
+            prev=fun3(x)
+            document.getElementById("frame").src = x + ".html";
+        }
+    </script>
+</body>
+
+</html>

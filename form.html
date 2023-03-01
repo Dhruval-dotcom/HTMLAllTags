@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    td{
+        padding: 10px 20px;
+        border: 1px solid black;
+    }
+</style>
+<body>
+    <div id="heading"><h1>Form tag and attributes</h1></div>
+    attributes
+
+    <table class="ws-table-all notranslate" id="table1">
+        <tr>
+            <th style="width:20%">Attribute</th>
+            <th style="width:37%">Value</th>
+            <th style="width:43%">Description</th>
+        </tr>
+        
+        <tr>
+            <td>action</td>
+            <td><i>URL</i></td>
+            <td>Specifies where to send the form-data when a form is submitted</td>
+        </tr>
+        <tr>
+            <td>autocomplete</td>
+            <td>on<br>off</td>
+            <td>Specifies whether a form should have autocomplete on or off</td>
+        </tr>
+        <tr>
+            <td>enctype</td>
+            <td>application/x-www-form-urlencoded<br>
+                multipart/form-data<br>
+                text/plain</td>
+            <td>Specifies how the form-data should be encoded when submitting it to the server (only for
+                method=&quot;post&quot;)</td>
+        </tr>
+        <tr>
+            <td>method</td>
+            <td>get<br>
+                post</td>
+            <td>Specifies the HTTP method to use when sending form-data</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td><i>text</i></td>
+            <td>Specifies the name of a form</td>
+        </tr>
+       
+        <tr>
+            <td>rel</td>
+            <td>external<br>help<br>license<br>next<br>nofollow<br>noopener<br>
+                noreferrer<br>opener<br>prev<br>search</td>
+            <td>Specifies the relationship between a linked resource and the current
+                document</td>
+        </tr>
+        <tr>
+            <td>target</td>
+            <td>_blank<br>
+                _self<br>
+                _parent<br>
+                _top</td>
+            <td>Specifies where to display the response that is received after submitting the form</td>
+        </tr>
+    </table>
+    <div id="code">
+        <pre>
+            &lt;form action="/action_page.php" method="get"&gt;
+                &lt;label for="fname"&gt;First name:&lt;/label&gt;
+                &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+                &lt;input type="submit" value="Submit"&gt;
+              &lt;/form&gt; 
+        </pre>
+    </div>
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+</body>
+
+</html>
